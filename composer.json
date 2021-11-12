@@ -1,5 +1,5 @@
 {
-    "name": "specshaper/gdpr-bundle",
+    "name": "machine-rc/gdpr-bundle",
     "type": "symfony-bundle",
     "description": "A Symfony 3|4|5 bundle for classifying entity parameters according to GDPR requirements and encrypting data",
     "homepage": "https://github.com/mogilvie/GdprBundle",
@@ -23,7 +23,7 @@
         "symfony/validator": "^3.2 || ^4 || ^5" ,
         "symfony/twig-bundle": "^3.2 || ^4 || ^5",
         "symfony/security-bundle": "^3.2 || ^4 || ^5",
-        "twig/twig": "^2.0",
+        "twig/twig": "^2.0 || ^3",
         "symfony/orm-pack": "*",
         "specshaper/encrypt-bundle": "dev-master || ^1.1 || ^2",
         "roromix/spreadsheetbundle": "^1.0"
