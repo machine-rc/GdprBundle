@@ -5,18 +5,16 @@ namespace SpecShaper\GdprBundle\Command;
 use Doctrine\Common\Annotations\AnnotationReader;
 use Doctrine\DBAL\Connection;
 use Doctrine\DBAL\Schema\Comparator;
-use Doctrine\DBAL\Types\Type;
 use Doctrine\ORM\EntityManagerInterface;
 use Doctrine\ORM\Mapping\ClassMetadata;
 use Doctrine\ORM\Mapping\Column;
 use SpecShaper\GdprBundle\Model\PersonalData;
 use SpecShaper\GdprBundle\Types\PersonalDataType;
 use SpecShaper\GdprBundle\Utils\Disposer;
-use Symfony\Bundle\FrameworkBundle\Command\ContainerAwareCommand;
+use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Helper\ProgressBar;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
-use Symfony\Component\Serializer\Serializer;
 
 /**
  * Dispose Command
@@ -27,7 +25,7 @@ use Symfony\Component\Serializer\Serializer;
  *
  * @author Mark Ogilvie <mark.ogilvie@ogilvieconsulting.net>
  */
-class DisposeCommand extends ContainerAwareCommand
+class DisposeCommand extends Command
 {
     /** @var EntityManagerInterface */
     private $em;

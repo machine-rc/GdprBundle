@@ -10,7 +10,6 @@ use Doctrine\ORM\EntityManagerInterface;
 use Doctrine\ORM\Mapping\ClassMetadata;
 use Doctrine\ORM\Mapping\Column;
 use SpecShaper\EncryptBundle\Encryptors\EncryptorInterface;
-use SpecShaper\EncryptBundle\Subscribers\DoctrineEncryptSubscriberInterface;
 use SpecShaper\GdprBundle\Model\PersonalData;
 use SpecShaper\GdprBundle\Types\PersonalDataType;
 use Symfony\Component\Console\Command\Command;
